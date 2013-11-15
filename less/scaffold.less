@@ -91,12 +91,18 @@ img {
 }
 
 .staying-afloat {
-  padding-right:20px;
   letter-spacing:-0.1px;
 
   .heading {
     color:#24795a;
     font-size:21px;
+    margin-bottom:6px;
+    padding-right:20px;
+  }
+
+  p {
+    padding-right:20px;
+    padding-left:6px;
   }
 }
 
@@ -117,14 +123,52 @@ img {
       top:-2px;
     }
   }
+
   ul {
     margin-top:15px;
 
     li {
+        color:#e0e0e0;
         border-left:solid 1px #e5e5e5;
         margin-left:-1px;
         text-align:center;
-        padding-bottom:30px;
+
+        .figcaption {
+          margin-top:-58px;
+          position:relative;
+          z-index:-1;
+          padding-bottom:30px;
+
+          span {
+            display:block;
+            line-height:1.1;
+            letter-spacing: -1px;
+          }
+          .largest {
+            font-size:87px;
+          }
+          .larger {
+            font-size:79px;
+          }
+          .large {
+            font-size:40px;
+          }
+          .medium {
+            font-size:39px;
+          }
+          .small {
+            font-size:38px;
+          }
+          .smaller {
+            font-size:32px;
+          }
+          .tiny {
+            font-size:31px;
+          }
+          .tinier {
+            font-size:28px;
+          }
+        }
 
         &:first-child {
           border-left:none;
