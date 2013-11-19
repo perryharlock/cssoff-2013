@@ -1,9 +1,23 @@
 .opacity(@opacity: 0.5) {
-  -moz-opacity: @opacity;
-  -khtml-opacity: @opacity;
-  -webkit-opacity: @opacity;
-  opacity: @opacity;
-  @opperc: @opacity * 100;
-  -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
-  filter: ~"alpha(opacity=@{opperc})";
+	-moz-opacity: @opacity;
+	-khtml-opacity: @opacity;
+	-webkit-opacity: @opacity;
+	opacity: @opacity;
+	@opperc: @opacity * 100;
+	-ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
+	filter: ~"alpha(opacity=@{opperc})";
+}
+
+.rotate(@degrees: 5deg) {
+	-webkit-transform:rotate(@degrees);
+	-moz-transform:rotate(@degrees);
+	-ms-transform:rotate(@degrees);
+	-o-transform:rotate(@degrees);
+	transform:rotate(@degrees);
+}
+
+.inline-block() {
+	display: inline-block;
+	*display: inline; // Internet Explorer 6–7
+	*zoom: 1; // Internet Explorer 6–7
 }

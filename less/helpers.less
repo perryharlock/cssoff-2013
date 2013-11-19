@@ -42,3 +42,19 @@
   -webkit-background-clip: padding-box; /* for Safari */
   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 }
+.semi-circle-after:after {
+    content:"";
+    pointer-events:none;
+    position:absolute;
+    z-index:10;
+    display:block;
+}
+.semi-circle-after:after {
+    height:28px;
+    width:28px;
+    left:50%;
+    bottom:-14px;
+    margin-left:-14px;
+    border-radius:14px;
+    background-color:#fff;
+}
