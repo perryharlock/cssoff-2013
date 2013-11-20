@@ -22,3 +22,42 @@
 
 .offset-1 { margin-left:80px; }
 .offset-3 { margin-left:240px; }
+
+
+@media (max-width:1079px) {
+	.container {
+		width:768px;
+	}
+
+	.col-md-1 { width:64px; }
+	.col-md-2 { width:128px; }
+	.col-md-3 { width:192px; }
+	.col-md-4 { width:256px; }
+	.col-md-5 { width:320px; }
+	.col-md-6 { width:384px; }
+	.col-md-7 { width:448px; }
+	.col-md-8 { width:512px; }
+	.col-md-9 { width:576px; }
+	.col-md-10 { width:640px; }
+	.col-md-11 { width:704px; }
+	.col-md-12 { width:768px; }
+
+	.offset-1, .offset-3 { margin-left:0; }
+}
+
+@media (max-width:799px) {
+	.container {
+		width:95%;
+	}
+	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12,
+	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+		float:none;
+		width:100%;
+	}
+}
+
+@media (max-width:640px) {
+	.container {
+		width:85%;
+	}
+}
