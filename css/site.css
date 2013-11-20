@@ -127,6 +127,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.inline-block {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
 p {
   margin: 0 0 15px;
 }
@@ -321,6 +326,7 @@ body {
   line-height: 1.357;
   color: #000000;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 img {
   max-width: 100%;
@@ -435,7 +441,7 @@ a:active {
 }
 .positioning-relatives img {
   position: relative;
-  left: -70px;
+  margin-left: -70px;
   transform: rotate(-3.8deg);
   z-index: -1;
   max-width: none;
@@ -735,6 +741,8 @@ a:active {
   *display: inline;
   *zoom: 1;
   left: 30px;
+  position: relative;
+  z-index: 0;
 }
 .overflow img {
   position: absolute;
@@ -743,8 +751,7 @@ a:active {
   left: -25px;
   max-width: none;
 }
-.overflow p,
-.overflow h2 {
+.overflow p {
   position: relative;
   z-index: 10;
 }
