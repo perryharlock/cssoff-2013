@@ -400,10 +400,27 @@ p {
     float: none;
     width: 100%;
   }
+  .col-sm-3,
+  .col-sm-6 {
+    float: left;
+  }
+  .col-sm-3 {
+    width: 33%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
 }
 @media (max-width: 640px) {
   .container {
     width: 85%;
+  }
+}
+@media (max-width: 360px) {
+  .col-sm-3,
+  .col-sm-6 {
+    width: 100%;
+    float: none;
   }
 }
 html {
@@ -476,21 +493,21 @@ a:active {
   border-right: solid 1px #e5e5e5;
 }
 .immigration h2 {
-  font-size: 82px;
-  letter-spacing: -0.2px;
+  font-size: 83px;
+  letter-spacing: -1px;
   border-bottom: solid 22px #000;
   padding-bottom: 5px;
 }
 .immigration h3 {
-  font-size: 39px;
-  letter-spacing: -0.2px;
+  font-size: 40px;
+  letter-spacing: -1px;
   border-bottom: solid 3px #000;
   padding-bottom: 15px;
   margin: 10px 0 11px 0;
 }
 .immigration p {
   font-size: 22px;
-  letter-spacing: -0.2px;
+  letter-spacing: -1px;
   line-height: 1.32;
 }
 .immigration em {
@@ -555,9 +572,6 @@ a:active {
 }
 .box-model p {
   line-height: 1.42;
-}
-.staying-afloat {
-  letter-spacing: -0.1px;
 }
 .staying-afloat h2 {
   color: #24795a;
@@ -688,21 +702,21 @@ a:active {
   border-right: solid 1px #e5e5e5;
 }
 .immigration h2 {
-  font-size: 82px;
-  letter-spacing: -0.2px;
+  font-size: 83px;
+  letter-spacing: -1px;
   border-bottom: solid 22px #000;
   padding-bottom: 5px;
 }
 .immigration h3 {
-  font-size: 39px;
-  letter-spacing: -0.2px;
+  font-size: 40px;
+  letter-spacing: -1px;
   border-bottom: solid 3px #000;
   padding-bottom: 15px;
   margin: 10px 0 11px 0;
 }
 .immigration p {
   font-size: 22px;
-  letter-spacing: -0.2px;
+  letter-spacing: -1px;
   line-height: 1.32;
 }
 .immigration em {
@@ -765,12 +779,15 @@ a:active {
   background-clip: padding-box;
   /* for IE9+, Firefox 4+, Opera, Chrome */
 
-  letter-spacing: -0.2px;
+  letter-spacing: -1px;
   padding-bottom: 23px;
   padding-top: 18px;
   line-height: 1.1;
 }
 .transformers .rotten {
+  display: block;
+}
+.transformers .rotten-rating {
   font-size: 32px;
 }
 .transformers .percentage {
@@ -794,11 +811,16 @@ a:active {
 .transformers .premiere .address {
   line-height: 1.2;
 }
+.transformers .premiere .venue,
+.transformers .premiere .country {
+  letter-spacing: 0.2px;
+  text-align: center;
+}
 .transformers .premiere .venue {
-  font-size: 27px;
+  font-size: 26px;
 }
 .transformers .premiere .country {
-  font-size: 28px;
+  font-size: 27px;
 }
 .transformers .premiere .time {
   font-size: 39px;
@@ -997,16 +1019,36 @@ a:active {
     font-size: 20px;
   }
   .immigration h2 {
-    font-size: 57px;
+    font-size: 59px;
     border-bottom-width: 16px;
   }
   .immigration h3 {
-    font-size: 27px;
+    font-size: 29px;
     padding-bottom: 10px;
   }
   .transformers img {
     left: -24px;
     max-width: 120%;
+  }
+  .transformers .rotten {
+    font-size: 16px;
+  }
+  .transformers .rotten-rating {
+    font-size: 35px;
+  }
+  .transformers .percentage {
+    font-size: 56px;
+    margin-top: -3px;
+    margin-left: 5px;
+  }
+  .transformers .premiere .venue {
+    font-size: 28px;
+  }
+  .transformers .premiere .country {
+    font-size: 29px;
+  }
+  .transformers .premiere .time {
+    font-size: 42px;
   }
   .overflow img {
     left: 0;
@@ -1027,7 +1069,7 @@ a:active {
     margin-top: 20px;
   }
   .logo {
-    font-size: 200px;
+    font-size: 160px;
     text-align: center;
   }
   .positioning-relatives {
@@ -1067,6 +1109,13 @@ a:active {
   .staying-afloat p {
     padding: 0;
     font-size: 16px;
+  }
+  .bullets ul li.col-sm-6 {
+    border-left: none;
+  }
+  .bullets ul li.col-sm-6:last-child {
+    border-left: solid 1px #e5e5e5;
+    margin-left: 0;
   }
   .upside-down-heads {
     background-image: none;
@@ -1121,5 +1170,96 @@ a:active {
     float: none;
     text-align: center;
     margin-top: 20px;
+  }
+}
+@media (max-width: 640px) {
+  .box-model img {
+    float: none;
+    margin-right: 0;
+  }
+  .transformers img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .purple-haze {
+    height: 230px;
+  }
+  .logo {
+    font-size: 132px;
+    margin-top: 0;
+  }
+  .logo .wider {
+    letter-spacing: 0;
+  }
+  .volume {
+    float: none;
+    text-align: center;
+  }
+  .box-model {
+    margin-top: 40px;
+    font-size: 17px;
+  }
+  .positioning-relatives {
+    font-size: 16px;
+    margin-top: 50px;
+  }
+  .positioning-relatives h2 {
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+  .positioning-relatives .article-detail {
+    padding-left: 20px;
+  }
+  .bullets h2 span {
+    display: block;
+  }
+  .famous-blocks {
+    font-size: 16px;
+    margin-top: 0;
+  }
+  .famous-blocks h2 {
+    font-size: 30px;
+  }
+  .famous-blocks .fig-caption {
+    padding-top: 0;
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+  .famous-blocks p {
+    padding: 10px 15px 0 15px;
+  }
+  .immigration h2 {
+    font-size: 44px;
+  }
+  .immigration h3 {
+    font-size: 20px;
+  }
+  .immigration p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 360px) {
+  .logo {
+    font-size: 145px;
+  }
+  .purple-haze {
+    height: 290px;
+  }
+  .positioning-relatives h2 {
+    font-size: 30px;
+  }
+  .positioning-relatives .article-detail {
+    margin-top: -90px;
+  }
+  .bullets ul li {
+    border-left: none;
+    margin: 0;
+  }
+  .overflow h2 {
+    display: block;
+    font-size: 55px;
+    left: 0;
+    text-align: center;
   }
 }

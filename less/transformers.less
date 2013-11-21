@@ -45,12 +45,15 @@
     border-top: 4px solid rgba(0, 0, 0, .1);
     -webkit-background-clip: padding-box; /* for Safari */
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
-    letter-spacing: -0.2px;
+    letter-spacing: -1px;
     padding-bottom:23px;
     padding-top:18px;
     line-height:1.1;
   }
   .rotten {
+    display:block;
+  }
+  .rotten-rating {
     font-size:32px;
   }
   .percentage {
@@ -75,11 +78,15 @@
     .address {
       line-height:1.2;
     }
+    .venue, .country {
+      letter-spacing:0.2px;
+      text-align:center;
+    }
     .venue {
-      font-size:27px;
+      font-size:26px;
     }
     .country {
-      font-size:28px;
+      font-size:27px;
     }
     .time {
       font-size:39px;
