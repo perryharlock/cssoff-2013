@@ -471,7 +471,7 @@ a:active {
   left: 0;
   top: 0;
   width: 45.5%;
-  background: #cdc9dd url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/86373/gradient.png) repeat-x bottom left;
+  background: #cdc9dd url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/86373/gradient_1.png) repeat-x bottom left;
   height: 1010px;
   z-index: -5;
 }
@@ -482,7 +482,7 @@ a:active {
   margin-top: 140px;
 }
 .upside-down-heads {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/86373/upside-down-heads.jpg) no-repeat left top;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/86373/upside-down-heads_1.jpg) no-repeat left top;
 }
 .immigration {
   padding-top: 153px;
@@ -513,10 +513,10 @@ a:active {
   font-weight: 700;
 }
 .positioning-relatives {
-  font-size: 25px;
+  font-size: 24px;
   line-height: 1.32;
   position: relative;
-  top: 18px;
+  top: -10px;
   z-index: 5;
   margin-bottom: 52px;
   margin-top: -310px;
@@ -534,7 +534,7 @@ a:active {
   margin-bottom: 30px;
 }
 .positioning-relatives .article-detail {
-  margin-top: -160px;
+  margin-top: -205px;
   position: relative;
   padding-left: 30px;
 }
@@ -544,12 +544,7 @@ a:active {
 }
 .positioning-relatives img {
   position: relative;
-  margin-left: -90px;
-  -webkit-transform: rotate(-3.8deg);
-  -moz-transform: rotate(-3.8deg);
-  -ms-transform: rotate(-3.8deg);
-  -o-transform: rotate(-3.8deg);
-  transform: rotate(-3.8deg);
+  margin-left: -154px;
   z-index: -1;
   max-width: none;
 }
@@ -906,12 +901,11 @@ a:active {
   position: relative;
   z-index: 10;
 }
-.overflow p,
-.overflow em {
+.overflow p {
   font-size: 16px;
   color: #5e6c74;
 }
-.overflow em {
+.overflow a {
   font-family: 'Lora', serif;
   font-weight: 400;
   font-weight: 700;
@@ -971,19 +965,19 @@ a:active {
     height: 910px;
   }
   .positioning-relatives {
-    top: 70px;
+    top: 50px;
     font-size: 21px;
     margin-bottom: 110px;
   }
   .positioning-relatives img {
     max-width: 150%;
-    margin-left: -65px;
+    margin-left: -115px;
   }
   .positioning-relatives h2 {
     font-size: 65px;
   }
   .positioning-relatives .article-detail {
-    margin-top: -140px;
+    margin-top: -180px;
     left: 0;
     padding-left: 50px;
   }
@@ -1124,10 +1118,11 @@ a:active {
   .positioning-relatives h2 {
     margin-bottom: 60px;
     font-size: 60px;
+    width: 80%;
   }
   .positioning-relatives .article-detail {
-    margin-top: -120px;
-    padding-left: 30px;
+    margin-top: -195px;
+    padding-left: 80px;
   }
   .box-model {
     top: 0px;
@@ -1225,8 +1220,12 @@ a:active {
     float: none;
     margin-right: 0;
   }
+  .positioning-relatives h2 {
+    font-size: 45px;
+  }
   .positioning-relatives .article-detail {
     margin-top: -160px;
+    padding-left: 60px;
   }
   .transformers img {
     max-width: 100%;
@@ -1280,13 +1279,17 @@ a:active {
     font-size: 16px;
     margin-top: 50px;
   }
+  .positioning-relatives h2,
+  .positioning-relatives .feature {
+    margin-left: 30px;
+  }
   .positioning-relatives h2 {
-    font-size: 45px;
+    font-size: 34px;
     margin-bottom: 30px;
   }
   .positioning-relatives .article-detail {
     padding-left: 20px;
-    margin-top: -120px;
+    margin-top: -116px;
   }
   .bullets h2 span {
     display: block;
@@ -1327,10 +1330,14 @@ a:active {
     height: 290px;
   }
   .positioning-relatives h2 {
-    font-size: 30px;
+    font-size: 26px;
+  }
+  .positioning-relatives h2,
+  .positioning-relatives .feature {
+    margin-left: 10px;
   }
   .positioning-relatives .article-detail {
-    margin-top: -90px;
+    margin-top: -95px;
   }
   .bullets ul li {
     border-left: none;
