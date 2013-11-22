@@ -507,7 +507,7 @@ a:active {
   letter-spacing: -0.2px;
   line-height: 1.32;
 }
-.immigration em {
+.immigration a {
   font-family: 'Merriweather', serif;
   font-weight: 400;
   font-weight: 700;
@@ -708,8 +708,8 @@ a:active {
   right: 0px;
   bottom: 0px;
 }
-.famous-blocks .leaf-turn,
-.famous-blocks .map-link {
+.famous-blocks .map-link,
+.famous-blocks .leaf-turn {
   z-index: 10;
 }
 .famous-blocks .google-map,
@@ -728,8 +728,6 @@ a:active {
 .famous-blocks .map-link:hover .google-map {
   width: 130px;
   height: 130px;
-  right: 0px;
-  bottom: 0px;
 }
 .famous-blocks .google-map {
   z-index: 9;
@@ -761,7 +759,7 @@ a:active {
   letter-spacing: -0.2px;
   line-height: 1.32;
 }
-.immigration em {
+.immigration a {
   font-family: 'Merriweather', serif;
   font-weight: 400;
   font-weight: 700;
