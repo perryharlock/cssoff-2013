@@ -21,4 +21,43 @@
     padding-top:10px;
     padding-bottom:30px;
   }
+  .map {
+    position:relative;
+  }
+  .map-link, .google-map, .google-map img, .leaf-turn {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+  .leaf-turn, .map-link {
+    z-index:10;
+  }
+  .google-map, .leaf-turn {
+    width:90px;
+    height:90px;
+    transition:(all 0.5s);
+    -webkit-transition:(all 0.5s);
+  }
+  .map-link {
+    bottom: 9px;
+    width:130px;
+    height:130px;
+
+    &:hover {
+      .leaf-turn, .google-map {
+        width:130px;
+        height:130px;
+        right: 0px;
+        bottom: 0px;
+      }
+    }
+  }
+  .google-map {
+    z-index:9;
+    overflow:hidden;
+
+    img {
+      max-width:none;
+    }
+  }
 }

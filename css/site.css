@@ -447,12 +447,6 @@ a {
 a:hover,
 a:focus,
 a:active {
-  -moz-opacity: 0.9;
-  -khtml-opacity: 0.9;
-  -webkit-opacity: 0.9;
-  opacity: 0.9;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=90);
-  filter: alpha(opacity=90);
   text-decoration: underline;
 }
 .logo {
@@ -510,7 +504,7 @@ a:active {
 }
 .immigration p {
   font-size: 22px;
-  letter-spacing: -1px;
+  letter-spacing: -0.2px;
   line-height: 1.32;
 }
 .immigration em {
@@ -703,6 +697,47 @@ a:active {
   padding-top: 10px;
   padding-bottom: 30px;
 }
+.famous-blocks .map {
+  position: relative;
+}
+.famous-blocks .map-link,
+.famous-blocks .google-map,
+.famous-blocks .google-map img,
+.famous-blocks .leaf-turn {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.famous-blocks .leaf-turn,
+.famous-blocks .map-link {
+  z-index: 10;
+}
+.famous-blocks .google-map,
+.famous-blocks .leaf-turn {
+  width: 90px;
+  height: 90px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.famous-blocks .map-link {
+  bottom: 9px;
+  width: 130px;
+  height: 130px;
+}
+.famous-blocks .map-link:hover .leaf-turn,
+.famous-blocks .map-link:hover .google-map {
+  width: 130px;
+  height: 130px;
+  right: 0px;
+  bottom: 0px;
+}
+.famous-blocks .google-map {
+  z-index: 9;
+  overflow: hidden;
+}
+.famous-blocks .google-map img {
+  max-width: none;
+}
 .immigration {
   padding-top: 153px;
   padding-right: 20px;
@@ -723,7 +758,7 @@ a:active {
 }
 .immigration p {
   font-size: 22px;
-  letter-spacing: -1px;
+  letter-spacing: -0.2px;
   line-height: 1.32;
 }
 .immigration em {
